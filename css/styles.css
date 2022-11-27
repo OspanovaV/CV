@@ -3,44 +3,43 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: #dee1e4;
   padding: 20px;
+  font-family: 'Montserrat', sans-serif;  
   font-family: Montserrat;
+  font-size: 16px;
+  color: black;
+  background: #dee1e4;
 }
 
-.wrapper {
-  background: rgba(243, 242, 237, 0.904);
+.wrapper {  
   display: flex;
   width: 1024px;
   margin: 0 auto;
-  border-radius: 25px;
+  background: rgba(243, 242, 237, 0.904);
+  border-radius: 4px;
 }
 
-.sidebar {
-  background: #4d5d75;
-  min-width: 185px;
+.sitebar {  
+  width: 950px;
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 12px;
-  border-radius: 25px 0px 0px 25px;
+  background: #3ea1e4;
+  border-radius: 4px 0px 0px 4px;
 }
-
+.container {  
+  position: relative;
+  padding: 60px;
+}
 .my-photo {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  border-radius: 25px;
+  width: 65%; 
 }
 
-.about-me-contrainer {
-  padding: 60px;
-  position: relative;
-}
 .about-me-container ul,
 .about-me-container li {
   text-decoration: none;
@@ -53,27 +52,20 @@ body {
   margin-top: 25px;
   margin-bottom: 10px;
 }
-.contact-container .contacts-link,
-.contact-container .contacts-link-type {
-  font-size: 12px;
-  color: rgb(173, 165, 165);
-}
-.contact-container .contacts-link-type {
-  margin: 0;
+
+.contacts-link-type {
+  display: table; 
+  color: #ffffff;
 }
 .contacts-title {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  color: rgb(173, 165, 165);
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
-.contacts-link {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 16px;
-  color: #87888b;
+.contacts-link { 
   margin-bottom: 10px;
   text-decoration: none;
   text-align: left;
@@ -83,18 +75,26 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: #fff;
-  margin-right: 8px;
 }
 
 .tech-skills-title {
   font-size: 20px;
   font-weight: 515;
   line-height: 24px;
-  color: rgb(190, 175, 175);
+  color: #ffffff;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
-
+.tech-skills-title::after {
+  content: "";   
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 60%;
+    height: 3px;
+    background-color: #ffffff;;
+    border-radius: 2px;
+}
 .tech-skills-container {
   margin-right: 0px;
   margin-left: 10%;
@@ -102,30 +102,28 @@ body {
   margin-top: 25px;
   margin-bottom: 10px;
 }
-.tech-skills-container li,
-.tech-skills-container .contacts-link {
-  font-size: 10px;
-  color: orange;
-}
-.lang {
-  display: flex;
-  justify-content: space-between;
+.tech-skills {
+  margin-left: 20px;
 }
 
 .tech-skills-item {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: orange;
-  margin-left: 19px;
+  margin-bottom: 8px;
+  color: #ffffff;
 }
-
-.tech-skills-text {
-  color: rgb(173, 165, 165);
+.skill {
+  list-style: disc;
+}
+.project-item {
+  margin-bottom: 16px;
+}
+.project {
+  font-size: 18px;
+  /* font-weight: 700; */
+  border-bottom: groove;
 }
 
 .name {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 30px;
   margin-top: 0;
@@ -142,70 +140,60 @@ body {
 }
 
 .info-container {
+margin-left: -60px;
+margin-right: -60px;
+margin-top: -60px;
+padding: 60px;
+
   margin-bottom: 25px;
+  background-color: #3ea1e4;
 }
 .about-me-container ul {
   text-decoration: none;
 }
 .about-me-title {
+  display: block;
+  width: 570px;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 12px;
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 10px;
+  background-color: #3ea1e4;;
+  text-transform: uppercase;
 }
 
-.profession-title {
-  font-style: 16px;
+.profession-title, .project-link {  
   font-weight: 700;
   line-height: 20px;
-  margin-top: 8px;
+  margin-top: 16px;
+  color: black;
 }
 
 .profession-time {
-  font-size: 12px;
-  font-weght: 500;
-  color: #87888b;
-  line-height: 22px;
-}
-
-..description-company {
+  margin-top: 8px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  margin-top: 24px;
   text-align: justify;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
-
-.profession-item {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: orange;
+.work-experience {
+  margin-bottom: 8px;
 }
 
 .school-time {
   font-size: 14px;
-  font-weght: 500;
+  font-weight: 500;
   color: #87888b;
   line-height: 22px;
 }
 
-.suosittelijat {
-  list-style: none;
-  text-decoration: underline;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-}
-p {
-  text-align: justify;
-}
 .print {
   font-size: large;
+  font-weight: 700;
   position: absolute;
   top: 30px;
   right: 61px;
+  color: #87888b;
 }
