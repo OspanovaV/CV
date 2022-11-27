@@ -45,7 +45,7 @@ body {
   text-decoration: none;
   list-style-type: none;
 }
-
+/* Contacts */
 .contact-container {
   margin-right: 0px;
   margin-left: 10%;
@@ -77,6 +77,7 @@ body {
   line-height: 24px;
 }
 
+/* tech-skills */
 .tech-skills-title {
   font-size: 20px;
   font-weight: 515;
@@ -85,6 +86,7 @@ body {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
+
 .tech-skills-title::after {
   content: "";   
     left: 0;
@@ -95,6 +97,7 @@ body {
     background-color: #ffffff;;
     border-radius: 2px;
 }
+
 .tech-skills-container {
   margin-right: 0px;
   margin-left: 10%;
@@ -102,6 +105,7 @@ body {
   margin-top: 25px;
   margin-bottom: 10px;
 }
+
 .tech-skills {
   margin-left: 20px;
 }
@@ -110,25 +114,31 @@ body {
   margin-bottom: 8px;
   color: #ffffff;
 }
+
 .skill {
   list-style: disc;
 }
-.project-item {
-  margin-bottom: 16px;
-}
-.project {
-  font-size: 18px;
-  /* font-weight: 700; */
-  border-bottom: groove;
+
+.print {
+  font-size: large;
+  font-weight: 700;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: #87888b;
 }
 
+/* about me */
 .name {
+  margin-top: 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 30px;
-  margin-top: 0;
+  text-align: center; 
 }
-
+.position {
+  text-align: center;
+}
 .description {
   font-size: 16px;
   font-weight: 400;
@@ -138,13 +148,19 @@ body {
   text-align: justify;
   color: black;
 }
+.project-item {
+  margin-bottom: 16px;
+}
 
+.project {
+  font-size: 18px; 
+  border-bottom: groove;
+}
 .info-container {
-margin-left: -60px;
-margin-right: -60px;
-margin-top: -60px;
-padding: 60px;
-
+  margin-left: -60px;
+  margin-right: -60px;
+  margin-top: -60px;
+  padding: 60px;
   margin-bottom: 25px;
   background-color: #3ea1e4;
 }
@@ -187,13 +203,4 @@ padding: 60px;
   font-weight: 500;
   color: #87888b;
   line-height: 22px;
-}
-
-.print {
-  font-size: large;
-  font-weight: 700;
-  position: absolute;
-  top: 30px;
-  right: 61px;
-  color: #87888b;
 }
